@@ -3,6 +3,6 @@
 name: OpenAIWorkshop
 services:
   web:
-    project: ./scenarios/incubations/automating_analytics
+    project: ./scenarios/incubations/copilot/employee_support/
     language: py
     host: appservice

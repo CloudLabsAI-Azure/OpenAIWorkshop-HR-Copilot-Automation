@@ -1,0 +1,10 @@
+streamlit
+openai
+streamlit-extras
+python-dotenv 
+plotly
+scipy
+scikit-learn
+azure
+azure-search-documents
+azure-search
