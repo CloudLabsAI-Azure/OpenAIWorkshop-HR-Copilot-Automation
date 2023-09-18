@@ -8,3 +8,8 @@ scikit-learn
 azure
 azure-search-documents
 azure-search
+numpy
+pandas
+pyodbc
+SQLAlchemy
+pmdarima
