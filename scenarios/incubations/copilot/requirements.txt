@@ -5,10 +5,10 @@ python-dotenv
 plotly
 scipy
 scikit-learn
-azure-search-documents
-azure-search
 numpy
 pandas
 pyodbc
 SQLAlchemy
 pmdarima
+azure-search-documents==11.4.0b9
+faiss-cpu
