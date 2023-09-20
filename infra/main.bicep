@@ -1,4 +1,3 @@
-targetScope = 'subscription'
 
 @minLength(1)
 @maxLength(64)
