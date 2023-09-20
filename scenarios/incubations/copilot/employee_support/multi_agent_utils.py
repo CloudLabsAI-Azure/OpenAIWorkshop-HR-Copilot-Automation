@@ -228,7 +228,7 @@ class Agent_Runner():
                 self.active_agent = agent
                 break
         agent_descriptions ="Jenny: a general customer support agent, handling everyting except HR, Payroll and IT\n\n Lucy: a specialist support agent in HR and Payroll\n\n Paul: a specialist support agent in IT\n\n"        
-        self.evaluator = Agent(engine="turbo-0613", persona="As a customer support manager, you need to assign call transfer requests to the right agent with the right skills. You have following agents with the description of their persona: \n\n"+agent_descriptions)
+        self.evaluator = Agent(engine="copilot-gpt4", persona="As a customer support manager, you need to assign call transfer requests to the right agent with the right skills. You have following agents with the description of their persona: \n\n"+agent_descriptions)
         
     def revaluate_agent_assignment(self,function_description):
         #TODO: revaluate agent assignment based on the state
