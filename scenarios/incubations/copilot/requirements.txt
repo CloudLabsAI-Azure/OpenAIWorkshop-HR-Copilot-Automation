@@ -12,3 +12,4 @@ SQLAlchemy
 pmdarima
 azure-search-documents==11.4.0b9
 faiss-cpu
+azure-search
