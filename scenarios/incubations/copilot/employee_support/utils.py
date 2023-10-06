@@ -72,17 +72,17 @@ else:
     faiss_search_client = Search_Client("./data/chunk_emb_map.json")
 
 def search_knowledgebase_acs(search_query):
-    vector = Vector(value=generate_embeddings(search_query), k=3, fields="embedding")
+    vector = Vector(value=generate_embeddings(search_query), k=3, fields="contentVector")
     print("search query: ", search_query)
     results = azcs_search_client.search(  
         search_text=search_query,  
         vectors= [vector],
-        select=["sourcepage","content"],
+        select=["id","content"],
         top=5
     )  
     text_content =""
     for result in results:  
-        text_content += f"{result['sourcepage']}\n{result['content']}\n"
+        text_content += f"{result['id']}\n{result['content']}\n"
     print("text_content", text_content)
     return text_content
 
